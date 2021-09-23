@@ -1,0 +1,13 @@
+title Untitled
+
+User->System: Authentication Request
+note right of System: Validiate()
+User->System: Request ticket booking
+System->User: Request details()
+User->System: Submit details()
+System->Admin:details()
+note right of System: Calculate cost()
+System->User: Total cost()
+User->System: Cost submitted
+System->Admin: Ticket Created
+System->User:Acknowledge
