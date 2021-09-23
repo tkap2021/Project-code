@@ -1,0 +1,89 @@
+#include<iostream>
+
+#include<conio.h>
+
+using namespace std;
+
+void main()
+
+{
+
+	int n,k,age[100];
+
+	double amount[100],sum=0,sum2=0;
+
+	cout<<"\nNumber of members going on journey?\n";
+
+	cin>>n;
+
+	cout<<"Age of the "<<a<<" members:\n";
+
+	for(k=0;k<n;i++)
+
+	{
+
+		cin>>age[k];
+
+	}
+
+	cout<<"\n Total cost for journey\n";
+
+	for(k=0;k<n;k++)
+
+	{
+
+		if(age[k]>=10 && age[k]<15)
+
+		{
+
+			cout<<"\n\n10-15 age persons got 10% discount.";
+
+			amount[k]=100-(100*10/100);
+
+			cout<<"\nCost of journey for "<<age[k]<<" year person is: Rs "<<amount[k];
+
+		}
+
+		else if(age[k]>=15 && age[k]<=20)
+
+		{
+
+			cout<<"\n\n15-20 age person got 5% discount.";
+
+			amount[k]=100-(100*5/100);
+
+			cout<<"\nCost of journey for "<<age[k]<<" year person is: Rs "<<amount[k];
+
+		}
+
+		else if(age[k]>20)
+
+		{
+
+			cout<<"\n\nAbove 20 age cost of journey is fix.";
+
+			amount[k]=100;
+
+			cout<<"\nCost of journey for "<<age[k]<<" year person is: Rs "<<amount[k];
+
+		}
+
+		else
+
+		{
+
+			cout<<"\n\n"<<age[k]<<" year person are not allowed as BELOW 10 Children are not allowed to sit on full seat\n";
+
+			amount[k]=0;
+
+		}
+
+		sum+=amount[k];
+
+	}
+
+	cout<<"\nTotal Price of Ticket is: "<<sum;
+
+	getch();
+
+}
